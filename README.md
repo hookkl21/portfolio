@@ -9,11 +9,15 @@
 -- Great way to start getting used to Git repo, updating, bug fixes, etc
 
 ##Side note
+
 --typewriter.js is from tutorial video that I found Youtube, followed along with the video to make it work within my project.
+
 -- https://www.youtube.com/watch?v=POX3dT-pB4E&ab_channel=TraversyMedia
 
 ##Deployment
+
 -- Used Netlify.com for free use
+
 -- The portfolio is deployed and changed frequently until complete
 
 Created by Masaki Hook
