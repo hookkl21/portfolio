@@ -1,7 +1,11 @@
 #My portfolio Websites
+
 -- Created with basic HTML, CSS(SASS), and a little bit of JavaScript
+
 -- Created from complete Scratch
+
 -- In order to hone in my skills, thought this would be a great way to start
+
 -- Great way to start getting used to Git repo, updating, bug fixes, etc
 
 ##Side note
