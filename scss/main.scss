@@ -312,5 +312,23 @@ img {
     }
   }
 }
+// success page form submission
+#success {
+  margin: auto;
+  justify-content: center;
+  height: 100vh;
+  .container {
+    margin-top: 5rem;
+    background: $gradient2;
+    height: 80%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  a {
+    width: 25%;
+  }
+}
 
 @import "media";

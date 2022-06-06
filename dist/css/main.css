@@ -403,6 +403,21 @@ img {
       #main-footer .footer-content .social .fab:hover {
         background: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%); }
 
+#success {
+  margin: auto;
+  justify-content: center;
+  height: 100vh; }
+  #success .container {
+    margin-top: 5rem;
+    background: linear-gradient(315deg, #5b6467 0%, #8b939a 74%);
+    height: 80%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }
+  #success a {
+    width: 25%; }
+
 @media (max-width: 800px) {
   #main-nav {
     flex-direction: column;
