@@ -1,0 +1,112 @@
+//tablets and smaller
+@media (max-width: 800px) {
+  #main-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  li {
+    padding: 1rem;
+  }
+  #header-inner {
+    height: 150px;
+  }
+  #header-home {
+    height: 35rem;
+    .header-content {
+      padding-top: 2rem;
+      h1 {
+        font-size: 2.6rem;
+        line-height: 1.2;
+      }
+      p.lead {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+  #about-info {
+    .about-info {
+      display: grid;
+      grid-template-areas:
+        "bioimage"
+        "bio"
+        "aw1"
+        "aw2"
+        "aw3";
+      grid-gap: 1.2rem;
+      img {
+        border-radius: 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  //   header {
+  //     width: 425px;
+  //   }
+  //   footer {
+  //     width: 425px;
+  //   }
+  #main-nav {
+    flex-direction: column;
+    align-items: center;
+    li {
+      padding: 1rem;
+    }
+  }
+  #header {
+    &-home {
+      height: 10rem;
+      border-bottom: 3px solid $main-color;
+      background-position: 20% 30%;
+      .header-content {
+        display: none;
+      }
+    }
+    &-inner {
+      height: 10rem;
+    }
+  }
+  #home-skills {
+    width: 500px;
+    margin: 0.5rem;
+    padding-left: 1rem;
+    div.container {
+      width: 400px;
+      margin: 0.5rem;
+    }
+  }
+  //stack frid columns
+  #home-skills .specials,
+  #home-experience .process,
+  .items {
+    grid-template-columns: 1fr;
+  }
+  #home {
+    &-experience {
+      .process div {
+        border-bottom: 1px $light-color dotted;
+        padding-bottom: 1rem;
+      }
+    }
+  }
+  #contact {
+    &-a {
+      .text-fields {
+        grid-template-areas:
+          "name"
+          "email"
+          "phone"
+          "message";
+      }
+    }
+  }
+  #main-footer {
+    .footer-content {
+      .social .fab {
+        margin-right: 0.2rem;
+      }
+    }
+  }
+}

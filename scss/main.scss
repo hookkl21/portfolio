@@ -1,8 +1,7 @@
 // importing files
 @import "config";
-@import "utilities";
-
-// General style
+@import "_utilities";
+@import "_item_grid"; // General style
 * {
   margin: 0;
   padding: 0;
@@ -13,6 +12,7 @@ body {
   line-height: 1.6;
   background-color: #96c8fb;
   background-image: linear-gradient(315deg, #96c8fb 0%, #ddbdfc 74%);
+  min-height: 100vh;
 }
 
 a {
@@ -31,6 +31,7 @@ h4 {
 }
 img {
   width: 100%;
+  height: 100%;
 }
 // logo
 
@@ -235,11 +236,60 @@ img {
   }
 }
 
+// contact page
+#contact {
+  &-a {
+    .text-fields {
+      display: grid;
+      grid-template-areas:
+        "name name"
+        "phone email"
+        "message message";
+      grid-gap: 1.2rem;
+      margin-bottom: 1.2rem;
+      .name-input {
+        grid-area: name;
+      }
+      .phone-input {
+        grid-area: phone;
+      }
+      .email-input {
+        grid-area: email;
+      }
+      .message-input {
+        grid-area: message;
+        height: 100px;
+      }
+
+      .text-input {
+        padding: 0.5rem 1rem;
+      }
+    }
+    button[type="submit"] {
+      width: 50%;
+    }
+  }
+  &-b {
+    .contact-info {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      text-align: center;
+    }
+  }
+  &-c {
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+    }
+  }
+}
+
 // footer
 #main-footer {
   background: $gradient2;
   color: $dark-color;
   height: 5rem;
+  bottom: 0;
 
   .footer-content {
     display: flex;
@@ -262,3 +312,5 @@ img {
     }
   }
 }
+
+@import "media";
