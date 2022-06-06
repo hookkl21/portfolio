@@ -443,6 +443,10 @@ img {
     #about-info .about-info img {
       border-radius: 15px; } }
 
+@media (max-width: 720px) {
+  #home-skills .specials {
+    grid-template-columns: 1fr; } }
+
 @media (max-width: 500px) {
   #main-nav {
     flex-direction: column;
@@ -457,13 +461,6 @@ img {
       display: none; }
   #header-inner {
     height: 10rem; }
-  #home-skills {
-    width: 500px;
-    margin: 0.5rem;
-    padding-left: 1rem; }
-    #home-skills div.container {
-      width: 400px;
-      margin: 0.5rem; }
   #home-skills .specials,
   #home-experience .process,
   .items {
